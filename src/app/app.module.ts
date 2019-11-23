@@ -5,16 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListaEditoraComponent } from './lista-editora/lista-editora.component';
 import { NovoEditoraComponent } from './novo-editora/novo-editora.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
     ListaEditoraComponent,
-    NovoEditoraComponent
+    NovoEditoraComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
